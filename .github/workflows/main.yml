@@ -4,20 +4,20 @@ on:
   workflow_dispatch:
   workflow_call:
     inputs:
-      image_name:
-        required: true
-        type: string
-      acr_login_server:
-        required: true
-        type: string
+      # image_name:
+      #   required: true
+      #   type: string
+      # acr_login_server:
+      #   required: true
+      #   type: string
       name:
         required: true
         type: string
-    secrets:
-      acr_username:
-        required: true
-      acr_password:
-        required: true
+    # secrets:
+    #   acr_username:
+    #     required: true
+    #   acr_password:
+    #     required: true
 
 jobs:
   build:
